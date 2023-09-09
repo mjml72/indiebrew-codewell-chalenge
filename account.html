@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/accountpage.css">
+    <title>Indie Brew</title>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="./index.html"><img src="./Assets/Logo.svg" alt="logo"></a>
+            </div>
+            <nav>
+                <a href="./index.html" class="back-icon"><img src="./Assets/Back Arrow.svg" alt="Back to Homepage"><span>Back to homepage</span></a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="acount-form-container">
+            <div class="info-form-container">
+                <h2>Create your personalized feed.</h2>
+                <p><span class="bold-span">Over 20 resources.</span>With resources ranging from Reddit to IndieHackers, we've got all your needs
+                covered.</p>
+                <p><span class="bold-span">Delivered weekly.</span>Every week at exactly Tuesday 12:00 P.M.EST- expect a value-packed digest right in your email.
+                </p>
+                <p><span class="bold-span">Unlimited ideas.</span>With all the ideas you'll be reading about, what's stopping you form creating a sustainable startup?</p>
+            </div>
+            <form>
+                <h3>Create your IndieBrew Account</h3>
+                <label for="email">Email</label>
+                <input type="email" id="email" required placeholder="email@example.com"  pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" required placeholder="your full name">
+                <label for="passwrod">Password</label>
+                <input type="password" id="password" required minlength="8" placeholder="At least 8 characters">
+                <div class="input-check">
+                    <input type="checkbox" name="terms" id="terms" required>
+                    <p for="terms">By creating an account on IndieBrew, you agree to the 
+                        <a href="#">Terms & Conditions</a>
+                    </p>    
+                </div>
+                <button type="submit" id="submitBtn">Create an Account</button>
+            </form>
+        </div>
+    </main>
+    <script src="./account.js"></script>
+</body>
+</html>
